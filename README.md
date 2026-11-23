@@ -26,7 +26,7 @@ Experimental. Built and run on one 16 GiB Metis chip with Voyager SDK 1.9.0:
 ## Repository contents
 
 ```
-model_axscript/                   added to the SDK's model_axscript (Apache-2.0)
+overlay/model_axscript/           added to the SDK's model_axscript (Apache-2.0)
   llm/apertus_v1_5_8b/            the model card: tag apertus-v1.5-8b, build/run config
   llm/models/apertus/apertus.py   PyTorch reference, checkpoint loader, quantisation, export
   llm/models/apertus/metis_impl.py  decoder-layer kernel, constant packing, host side
@@ -83,7 +83,9 @@ scripts/assemble_tree.sh voyager-sdk tree
 export PYTHONPATH=$PWD/tree
 ```
 
-`tree/model_axscript` is now the SDK's toolkit with the Apertus model added.
+`tree/model_axscript` is now the SDK's toolkit with the Apertus model added. Every command
+below needs `PYTHONPATH` pointing at `tree`. The overlay in `overlay/` is not importable on
+its own.
 
 ## 2. Install the SDK packages
 
@@ -194,7 +196,7 @@ the directory holding `model_axscript/`, and use `run_apertus.py`.
 
 ## Licence
 
-Apache-2.0 (see [LICENSE](LICENSE) and [NOTICE](NOTICE)). The code in `model_axscript/`
+Apache-2.0 (see [LICENSE](LICENSE) and [NOTICE](NOTICE)). The code in `overlay/model_axscript/`
 and `patches/` adapts Axelera's Apache-2.0 `model_axscript`.
 
 The Apertus 1.5 weights are licensed under Apache 2.0 together with the

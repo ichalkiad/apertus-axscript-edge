@@ -3,7 +3,7 @@ apertus-axscript-edge: Apertus 1.5 on Axelera Metis via AxScript
 Licensed under the Apache License, Version 2.0 (see LICENSE), matching the licence of the
 Apertus 1.5 models this repository ports.
 
-The files under model_axscript/ add to, and adapt code from, the AxScript models in the
+The files under overlay/model_axscript/ add to, and adapt code from, the AxScript models in the
 Axelera Voyager SDK (model_axscript/, Copyright 2026 Axelera AI, https://www.axelera.ai),
 which are licensed under the Apache License, Version 2.0. The notices in that directory's
 NOTICE file apply to the code adapted here. patches/register-apertus.patch modifies two of
