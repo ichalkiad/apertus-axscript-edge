@@ -1,0 +1,18 @@
+apertus-axscript-edge: Apertus 1.5 on Axelera Metis via AxScript
+
+Licensed under the Apache License, Version 2.0 (see LICENSE), matching the licence of the
+Apertus 1.5 models this repository ports.
+
+The files under model_axscript/ add to, and adapt code from, the AxScript models in the
+Axelera Voyager SDK (model_axscript/, Copyright 2026 Axelera AI, https://www.axelera.ai),
+which are licensed under the Apache License, Version 2.0. The notices in that directory's
+NOTICE file apply to the code adapted here. patches/register-apertus.patch modifies two of
+those files under the same licence.
+
+Third-party terms not covered by this licence:
+- The Apertus 1.5 weights (Swiss AI Initiative) are licensed under Apache 2.0 together
+  with the Apertus Acceptable Use Policy
+  (https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf),
+  which applies to any use of the weights, including artefacts compiled from them.
+- The Axelera compiler and runtime are covered by the Axelera EULA and are not part of
+  this repository.

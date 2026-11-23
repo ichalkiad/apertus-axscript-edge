@@ -1,0 +1,20 @@
+--- a/model_axscript/llm/models/architecture.py	2026-11-16 12:04:56.000000000 +0100
++++ b/model_axscript/llm/models/architecture.py	2026-11-16 12:04:57.000000000 +0100
+@@ -96,6 +96,7 @@
+ #: MODULE is what gets imported: the package registers nothing, so a caller that wants a
+ #: device kernel calls `implementation.register_kernels` and never reaches torch.
+ _BUNDLED_ARCHITECTURES = (
++    "apertus",
+     "domyn",
+     "lfm2",
+     "lfm2vl",
+--- a/model_axscript/llm/implementation.py	2026-11-16 12:04:56.000000000 +0100
++++ b/model_axscript/llm/implementation.py	2026-11-16 12:04:57.000000000 +0100
+@@ -1433,6 +1433,7 @@
+ #: The kernel modules that register an Implementation, named individually because a family
+ #: package registers nothing (see models.qwen3).
+ _BUNDLED_KERNELS = (
++    "apertus.metis_impl",
+     "domyn.metis_impl",
+     "lfm2.optimized_impl",
+     "lfm2vl.text_impl",
